@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog | Josh Harper</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="myFont" type="/Users/joshuaharper/Desktop/JoshHarper/fonts/astrospace.woff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<div class="navigation">
+    <div class="nav2">
+        <nav class="main-nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+            <a href="./index.html" class="logo">Josh Harper</a>
+            <ul class="navlinks">
+                <li><a href="./experience.html">Experience</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="mailto: j7harper@uwaterloo.ca" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<section class="container">
+
+
+    <p class="main2"> Blog </p>
+
+    <video class="vid1" loop autoplay muted>
+        <source src="vid/starrynight.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="cardcontainer">
+
+        <!---modal 1: 4x4x48-->
+        <button class="modal-button" href="#myModal1" style="cursor:pointer"> 
+                <h2 href="#myModal1" class="card-title">4x4x48</h2> 
+                <p href="#myModal1" class="date">March 2022</p>
+                <div href="#myModal1" class="card-text">The Toughest Challenge I've Ever Attempted</div>
+                
+        </button>
+
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="close" style="cursor:pointer">&times;</span>
+                <h2>Aquamate</h2>
+                <h3>IoT Smart Water Bottle</h3>
+                <p>this is the text inside the modal</p>
+            </div>
+        </div>
+
+        <!---modal 2: limitless ch1-->
+        <button class="modal-button" href="#myModal2" style="cursor:pointer"> 
+            <div class="card-box">
+                <h2 href="#myModal2" class="card-title">Two-axis GoPro Gimbal</h2> 
+                <p href="#myModal2" class="date">February 2022</p>
+                <div href="#myModal2" class="card-text">LIMITLESS Blog #1</div>
+            </div>
+        </button>
+
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close" style="cursor:pointer">&times;</span>
+                <h2>Jet </h2>
+                <h3>IoT Smart Water Bottle</h3>
+                <p>this is the text inside the modal</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="js/script.js"></script>
+        <!----- END ----->
+
+</section>
+
+
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://ca.linkedin.com/in/joshuaharper0" target="_blank">
+                <img class="follow" src="img/linkedinlogo.png" style="width:45px"> </img>
+            </a>
+        </li>
+        <li>
+            <a href="mailto: j7harper@uwaterloo.ca" target="_blank">
+                <img class="follow" src="img/emaillogo.png" style="width:50px"> </img>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/joshuaharperr" target="_blank">
+                <img class="follow" src="img/twitter.png" style="width:50px">
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</html>

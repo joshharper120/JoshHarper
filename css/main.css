@@ -1,0 +1,631 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    font-family: 'Shizuru';
+    font-size: 20px;
+    float: left;
+    padding-left: 35px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+#h1 a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+#h1 a:hover {
+    text-decoration: none;
+    color: black;
+    height: 15px;
+    padding: 15px;
+}
+
+.logo {
+    width: 300px;
+}
+
+
+/* -----------------------------navigation---------------------------- */
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    background-color: #212c3b;
+    z-index: 999;
+}
+
+.nav2 {
+    background-color: #141b25;
+    z-index: 999;
+}
+
+.main-nav {
+    height: 90px;
+    z-index: 999;
+}
+
+.logo {
+    color: white;
+    line-height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+}
+
+.navlinks {
+    list-style: none;
+    float: right;
+    line-height: 90px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    z-index: 999;
+}
+
+.navlinks li {
+    display: inline-block;
+    margin: 0px 20px;
+    z-index: 999;
+}
+
+.navlinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s linear 0s;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.navlinks li a:hover {
+    color: #0077b5;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #0077b5;
+}
+
+li a.contact {
+    background-color: #0077b5;
+    padding: 9px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    border-bottom: none;
+}
+
+li a.contact:hover {
+    background-color: #02669c;
+    color: white;
+    border-bottom: none;
+}
+
+#check {
+    display: none;
+    z-index: 999;
+}
+
+.menu-btn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media (max-width: 800px) {
+    .navlinks {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.5s;
+        right: -100%;
+        background: #222831;
+    }
+    .navlinks li {
+        display: block;
+    }
+    .navlinks li a {
+        font-size: 20px;
+    }
+    .navlinks li a:hover {
+        border-bottom: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    #check:checked~.navlinks {
+        right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    .menu-btn {
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .menu-btn:focus {
+        color: blue;
+    }
+}
+
+li {
+    display: inline;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial;
+    height: 50px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+/* content */
+
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    font-size: 2vw;
+    min-height: 400px;
+    background-color: #212c3b;
+    margin-top: 2%;
+}
+
+.main-img {
+    margin-left: 10%;
+    width: 20%;
+    display: block;
+}
+
+.main-text {
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10%;
+    overflow-wrap: normal;
+    background-color: #212c3b;
+    color: white;
+}
+
+
+/*main*/
+
+.main {
+    font-size: 5vw;
+    color: white;
+    position: absolute;
+    vertical-align: middle;
+    line-height: 35%;
+    padding-left: 20%;
+}
+
+.main2 {
+    font-size: 5vw;
+    color: white;
+    position: absolute;
+    vertical-align: middle;
+    line-height: 35%;
+    padding-left: 40%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #212c3b;
+    float: none;
+    color: black;
+}
+
+.container {
+    position: relative;
+    color: black;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+/* vid */
+
+.vid1 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.a1 {
+    text-decoration: none;
+    color: white;
+}
+
+.a1:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* resume */
+
+.resume-content {
+    overflow-wrap: normal;
+    height: 800px;
+    overflow-wrap: normal;
+}
+
+.resume {
+    color: white;
+    float: center;
+    margin-top: 1%;
+}
+
+.resume h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.resume h3 {
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+hr {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.company-logo {
+    width: 100px;
+    margin: 0;
+    margin-left: 10%;
+    display: block;
+    float: left;
+    padding: 1%;
+}
+
+.resume-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 18%;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #141b25;
+    height: 100px;
+    bottom: 0px;
+    width: 100%;
+    text-decoration: none;
+    z-index: 11;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+
+#footer a:hover {
+    color: black;
+}
+
+.home-footer {
+    position: fixed;
+    bottom: 0px;
+}
+
+.follow {
+    padding: 10px;
+}
+
+.imagesmall {
+    padding: 10px;
+    margin-bottom: 5%;
+    object-fit: cover;
+    width: 20%;
+    height: 20%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.section2 {
+    min-height: 45vh;
+    display: block;
+    overflow: auto;
+    text-align: left;
+    font-size: 55%;
+}
+
+.other-footer {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* -------------------------------- portfolio ------------------------- */
+
+.cardcontainer {
+    width: 99%;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 10px 10px;
+    overflow: auto;
+}
+
+.modal-button {
+    width: calc(100vw/3 - 15%);
+    height: calc(100vh/3 - 5%);
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px;
+    padding: 20px;
+    background-color: #141b25;
+    z-index: 1;
+    vertical-align: text-top;
+    margin-top: 5%;
+    color: white;
+    min-height: 330px;
+    overflow-wrap: normal;
+}
+
+.modal-button:hover {
+    background-color: #212c3b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+    height: 75%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    z-index: 11;
+}
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    top: 0px;
+    left: 50%;
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.date {
+    display: block;
+    font-family: 'Montserrant', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 15px;
+    vertical-align: bottom;
+    top: 50%;
+    font-family: 'Montserrant', sans-serif;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.close {
+    float: right;
+    color: lightgray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover .close:focus {
+    color: darkgray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.card-img {
+    border-radius: 10px;
+}
+
+
+/*animated banner*/
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    margin-left: 28%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.banner-text h2 {
+    text-align: left;
+    margin-left: 55%;
+    font-size: 3vw;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+}
+
+.banner-text h3 {
+    text-align: left;
+    margin-left: 55%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+}
+
+.box {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 50%;
+    opacity: 0;
+    position: relative;
+    text-transform: uppercase;
+    color: #0077b5;
+    display: block;
+    padding-left: 5%;
+}
+
+.b1 {
+    animation: anil1 15s infinite;
+}
+
+.b2 {
+    animation: anil2 15s infinite;
+}
+
+.b3 {
+    animation: anil3 15s infinite;
+}
+
+.b4 {
+    animation: anil4 15s infinite;
+}
+
+.b5 {
+    animation: anil5 15s infinite;
+}
+
+@keyframes anil1 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+}
+
+@keyframes anil2 {
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes anil3 {
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes anil4 {
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes anil5 {
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
