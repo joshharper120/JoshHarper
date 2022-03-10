@@ -2,16 +2,19 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Projects | Josh Harper</title>
-    <link href="css/main.css" rel="stylesheet">
-
     <link href="myFont" type="/Users/joshuaharper/Desktop/JoshHarper/fonts/astrospace.woff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shizuru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <div class="navigation">
@@ -71,8 +74,9 @@
                 <h3 class="modal-heading">My Role</h3>
                 <p class="modal-text">I was responsible for the mechanical/hardware side of the project. <br> I used an ESP32 connected to an ultrasonic sensor to detect the water level (programmed using Arduino), placing these components in a 3D-printed waterbottle cap. To
                     integrate this hardware with the app, I used IoT platform <i>Thingspeak</i> which uploads data to the internet that can be downloaded as an API.</p>
-                <img src="img/thingspeak.png" width="50%">
-
+                <figure style="display: flex;">
+                    <img class="modal-img" src="img/aquamate.jpeg" width=40%> <img src="img/thingspeak.png" width=40%>
+                </figure>
             </div>
         </div>
 
@@ -89,9 +93,15 @@
         <div id="myModal2" class="modal">
             <div class="modal-content">
                 <span class="close" style="cursor:pointer">&times;</span>
-                <h2>Jet Engine</h2>
-                <h3>IoT Smart Water Bottle</h3>
-                <p>this is the text inside the modal</p>
+                <h2 class="modal-title">Two-axis GoPro Gimbal</h2>
+                <h3 class="modal-subtitle">Drone Attachment Designed for Stability</h3>
+                <div class="modal-subtitle" style="font-weight: 100;">September 2021</div>
+                <hr class="line-modal">
+                <p class="modal-text">The gimbal was created from concept to final design in under 4 hours. Modelled in Solidworks, it is able to rotate about the Pitch and Yaw axes.</p>
+                <p class="modal-text">The main purpose of the gimbal is to attach a GoPro to a drone, to be used with computer vision software. The gimbal was specifically designed for 3D printing, with bolt slots ensuring that the camera can be easily adjusted for proper
+                    center of mass.</p>
+                <p class="modal-text"> Two servo motors are used to control rotation. </p>
+                <img class="modal-img" src="img/gimbal.png" width=40%>
             </div>
         </div>
 
@@ -108,9 +118,17 @@
         <div id="myModal3" class="modal">
             <div class="modal-content">
                 <span class="close" style="cursor:pointer">&times;</span>
-                <h2>Jet Engine</h2>
-                <h3>IoT Smart Water Bottle</h3>
-                <p>this is the text inside the modal</p>
+                <h2 class="modal-title">The STEAM Project</h2>
+                <h3 class="modal-subtitle">IoT Smart Water Bottle</h3>
+                <div class="modal-subtitle" style="font-weight: 100;">May - June 2021</div>
+                <hr class="line-modal">
+                <p class="modal-text"> During the short first two months of my first co-op placement, I was tasked with designing hands-on projects that kids would then assemble in the following two months.</p>
+                <p class="modal-text">I had access to laser cutters, and shelves of supplies from which I designed projects covering a range of topics from woodworking to circuits.</p>
+                <p class="modal-text"> Some of the projects that stand out are displayed in the images below. These were carefully drafted in AutoCAD to fit together much like a puzzle</p>
+                <p class="modal-text"> Through design iteration and experimentation, the final products were formed and later, mass produced. </p>
+                <figure style="display: flex;">
+                    <img class="modal-img" src="img/firetruck.jpg" width=40%> <img src="img/rover2.jpg" width=40%>
+                </figure>
             </div>
         </div>
 
@@ -127,17 +145,24 @@
         <div id="myModal4" class="modal">
             <div class="modal-content">
                 <span class="close" style="cursor:pointer">&times;</span>
-                <h2>Jet Engine</h2>
-                <h3>IoT Smart Water Bottle</h3>
-                <p>this is the text inside the modal</p>
+                <h2 class="modal-title">Industry 4.0 Winner</h2>
+                <h3 class="modal-subtitle">IoT Smart Water Bottle</h3>
+                <div class="modal-subtitle" style="font-weight: 100;">June 2020</div>
+                <hr class="line-modal">
+                <p class="modal-text"> During the short first two months of my first co-op placement, I was tasked with designing hands-on projects that kids would then assemble in the following two months.</p>
+                <p class="modal-text">I had access to laser cutters, and shelves of supplies from which I designed projects covering a range of topics from woodworking to circuits.</p>
+                <p class="modal-text"> Some of the projects that stand out are displayed in the images below. These were carefully drafted in AutoCAD to fit together much like a puzzle</p>
+                <p class="modal-text"> Through design iteration and experimentation, the final products were formed and later, mass produced. </p>
+                <figure style="display: flex;">
+                    <img class="modal-img" src="img/firetruck.jpg" width=40%> <img src="img/rover2.jpg" width=40%>
+                </figure>
             </div>
+
         </div>
 
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="js/script.js"></script>
-    <!----- END ----->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="js/script.js"></script>
+        <!----- END ----->
 
 </section>
 

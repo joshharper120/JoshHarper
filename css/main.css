@@ -36,17 +36,15 @@ h1 {
     margin: 0;
     padding: 0;
     background-color: #212c3b;
-    z-index: 999;
+    z-index: 100;
 }
 
 .nav2 {
     background-color: #141b25;
-    z-index: 999;
 }
 
 .main-nav {
     height: 90px;
-    z-index: 999;
 }
 
 .logo {
@@ -57,7 +55,6 @@ h1 {
     text-decoration: none;
     margin-left: 30px;
     font-family: 'Montserrat', sans-serif;
-    z-index: 999;
 }
 
 .navlinks {
@@ -68,13 +65,11 @@ h1 {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    z-index: 999;
 }
 
 .navlinks li {
     display: inline-block;
     margin: 0px 20px;
-    z-index: 999;
 }
 
 .navlinks li a {
@@ -83,7 +78,6 @@ h1 {
     font-size: 18px;
     transition: all 0.3s linear 0s;
     text-transform: uppercase;
-    z-index: 999;
 }
 
 .navlinks li a:hover {
@@ -108,7 +102,6 @@ li a.contact:hover {
 
 #check {
     display: none;
-    z-index: 999;
 }
 
 .menu-btn {
@@ -119,7 +112,6 @@ li a.contact:hover {
     margin-right: 40px;
     display: none;
     cursor: pointer;
-    z-index: 999;
 }
 
 @media (max-width: 800px) {
@@ -131,6 +123,7 @@ li a.contact:hover {
         transition: all 0.5s;
         right: -100%;
         background: #222831;
+        z-index: 100;
     }
     .navlinks li {
         display: block;
@@ -544,6 +537,11 @@ footer {
 
 .line-modal {
     margin-left: 10%;
+}
+
+.modal-img {
+    padding-left: 7%;
+    padding-right: 1%;
 }
 
 
