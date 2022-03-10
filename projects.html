@@ -56,9 +56,23 @@
         <div id="myModal1" class="modal">
             <div class="modal-content">
                 <span class="close" style="cursor:pointer">&times;</span>
-                <h2>Aquamate</h2>
-                <h3>IoT Smart Water Bottle</h3>
-                <p>this is the text inside the modal</p>
+                <h2 class="modal-title">Aquamate</h2>
+                <h3 class="modal-subtitle">IoT Smart Water Bottle</h3>
+                <div class="modal-subtitle" style="font-weight: 100;">October 2021</div>
+                <hr class="line-modal">
+                <p class="modal-text">For Hack the North 2021, I teamed up with two of my roommates to create a smart water bottle to keep people accountable to how much water they drink.</p>
+                <h3 class="modal-heading">Inspiration</h3>
+                <p class="modal-text">Water is the most essential resource we can possess. It helps improve digestion, boosts metabolism, aids in weight loss, flushes out toxins, and is vital to human survival. In today's society, people are very busy and often forget how
+                    important it is to drink water. They could be dehydrated at some point during their day and be completely unaware of it. To keep people accountable to their own wellbeing, Aquamate was created.</p>
+                <h3 class="modal-heading">Purpose</h3>
+                <p class="modal-text">Aquamate is a water bottle with an attached ultrasonic sensor. The sensor measures the volume of fluid that you consume while you drink through the bottle. Then, the data is sent wirelessly to the Aquamate iOS application that will show
+                    the calculated information to the user through visually-engaging icons.
+                    <br> The iOS application asks the user for their age, weight, sex, and any specific needs to calculate a range of possible, daily water intakes that is recommended to the user.</p>
+                <h3 class="modal-heading">My Role</h3>
+                <p class="modal-text">I was responsible for the mechanical/hardware side of the project. <br> I used an ESP32 connected to an ultrasonic sensor to detect the water level (programmed using Arduino), placing these components in a 3D-printed waterbottle cap. To
+                    integrate this hardware with the app, I used IoT platform <i>Thingspeak</i> which uploads data to the internet that can be downloaded as an API.</p>
+                <img src="img/thingspeak.png" width="50%">
+
             </div>
         </div>
 
