@@ -186,6 +186,7 @@ li a {
     min-height: 400px;
     background-color: #212c3b;
     margin-top: 2%;
+    margin-bottom: 0;
 }
 
 .main-img {
@@ -202,6 +203,7 @@ li a {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-bottom: 10%;
+    margin-top: 0;
     overflow-wrap: normal;
     background-color: #212c3b;
     color: white;
@@ -561,6 +563,7 @@ footer {
 .banner-text h2 {
     text-align: left;
     margin-left: 55%;
+    margin-bottom: 0;
     font-size: 3vw;
     text-transform: uppercase;
     position: relative;
@@ -574,6 +577,27 @@ footer {
     text-transform: uppercase;
     position: relative;
     display: block;
+}
+
+.banner-text h5 {
+    text-align: left;
+    margin-left: 55%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+}
+
+.caption {
+    text-align: left;
+    margin-left: 55%;
+    margin-top: 0;
+    font-size: 1.2vw;
+    position: relative;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .box {
