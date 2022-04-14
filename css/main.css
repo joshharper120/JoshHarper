@@ -179,24 +179,6 @@ li a {
 
 /* content */
 
-.intro {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    position: relative;
-    padding: 10px;
-    font-size: 2vw;
-    min-height: 400px;
-    background-color: #212c3b;
-    margin-top: 2%;
-    margin-bottom: 0;
-}
-
-.main-img {
-    margin-left: 10%;
-    width: 20%;
-    display: block;
-}
-
 .main-text {
     width: 80%;
     display: block;
@@ -297,11 +279,19 @@ body {
     color: black;
 }
 
-.container {
+.container-about {
     position: relative;
     color: black;
     text-align: center;
+    min-height: 155vh;
+    height: fit-content;
+}
+
+.container {
+    position: relative;
+    color: black;
     min-height: 100vh;
+    height: fit-content;
 }
 
 
@@ -312,16 +302,6 @@ body {
     height: 200px;
     background-size: cover;
     object-fit: cover;
-}
-
-.a1 {
-    text-decoration: none;
-    color: white;
-}
-
-.a1:hover {
-    text-decoration: underline;
-    color: black;
 }
 
 
@@ -419,12 +399,76 @@ footer {
     object-fit: cover;
 }
 
-.section2 {
-    min-height: 45vh;
-    display: block;
-    overflow: auto;
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 2vw;
+    min-height: 100vh;
+    background-color: #212c3b;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.section-left {
     text-align: left;
     font-size: 55%;
+    width: 30%;
+    flex: 1;
+    margin-left: 5%;
+    height: auto;
+}
+
+.section-right {
+    width: 65%;
+    text-align: left;
+    flex: 2;
+    height: auto;
+    min-height: 100%;
+}
+
+.main-img {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.img2 {
+    width: 60%;
+    padding: 2%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subheading {
+    top: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.info {
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+.in-text-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.in-text-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.intro h3 {
+    color: white;
 }
 
 .other-footer {
@@ -610,7 +654,7 @@ footer {
 
 .banner-text {
     position: absolute;
-    top: 40%;
+    top: 0;
     margin-left: 28%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -647,16 +691,6 @@ footer {
     text-transform: uppercase;
     position: relative;
     display: block;
-}
-
-.caption {
-    text-align: left;
-    margin-left: 55%;
-    margin-top: 0;
-    font-size: 1.2vw;
-    position: relative;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .box {
