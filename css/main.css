@@ -35,10 +35,6 @@ h1 {
     z-index: 100;
 }
 
-.nav2 {
-    background-color: #212c3b;
-}
-
 .main-nav {
     height: 90px;
 }
@@ -294,6 +290,13 @@ body {
     height: fit-content;
 }
 
+.containermodals {
+    text-align: center;
+    color: black;
+    min-height: 100vh;
+    height: fit-content;
+}
+
 
 /* vid */
 
@@ -525,6 +528,7 @@ footer {
     z-index: 999;
     overflow: scroll;
     min-height: 100%;
+    border-radius: 5px;
 }
 
 .modal-content {
