@@ -286,8 +286,7 @@ body {
 .container {
     position: relative;
     color: black;
-    min-height: 100vh;
-    height: fit-content;
+    height: fit-content + 10px;
 }
 
 .containermodals {
@@ -314,6 +313,7 @@ body {
     overflow-wrap: normal;
     height: 800px;
     overflow-wrap: normal;
+    display: block;
 }
 
 .resume {
@@ -367,7 +367,6 @@ hr {
 footer {
     background-color: #141b25;
     height: 100px;
-    bottom: 0px;
     width: 100%;
     text-decoration: none;
     z-index: 11;
@@ -386,6 +385,12 @@ footer {
 .home-footer {
     position: fixed;
     bottom: 0px;
+}
+
+.other-footer {
+    position: absolute;
+    bottom: -450px;
+    display: block;
 }
 
 .follow {
@@ -472,12 +477,6 @@ footer {
 
 .intro h3 {
     color: white;
-}
-
-.other-footer {
-    margin-top: auto;
-    position: absolute;
-    bottom: 0;
 }
 
 

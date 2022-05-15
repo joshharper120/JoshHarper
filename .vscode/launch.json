@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///Users/joshuaharper/Desktop/JoshHarper/aboutme.html",
+            "url": "file:///Users/joshuaharper/Desktop/JoshHarper/experience.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
